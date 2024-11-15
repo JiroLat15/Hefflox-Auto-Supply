@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{917DA707-F8D1-471B-90BE-8D81E59F63EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Final_Exam_2022__Draft_1_.My.MyApplication</StartupObject>
+    <RootNamespace>Final_Exam_2022__Draft_1_</RootNamespace>
+    <AssemblyName>Final Exam 2022 %28Draft 1%29</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Final Exam 2022 %28Draft 1%29.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Final Exam 2022 %28Draft 1%29.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.19.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.19.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.31.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.31\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Common, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.7.0.0\lib\net462\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.31\lib\net452\ZstdNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include=".Designer.vb">
+      <DependentUpon>Admin - Axle Hub %28Categ%29 v2.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin - Axle Hub %28Categ%29 v2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin - Brake Drum %28Categ%29 v2.Designer.vb">
+      <DependentUpon>Admin - Brake Drum %28Categ%29 v2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin - Brake Drum %28Categ%29 v2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin - Brake Fluid %28Categ%29 v2.Designer.vb">
+      <DependentUpon>Admin - Brake Fluid %28Categ%29 v2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin - Brake Fluid %28Categ%29 v2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin - Supplier %28Categ%29.Designer.vb">
+      <DependentUpon>Admin - Supplier %28Categ%29.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin - Supplier %28Categ%29.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer - 3 Help Menu.Designer.vb">
+      <DependentUpon>Customer - 3 Help Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer - 3 Help Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer - Axle Hub %28Categ%29 v3.Designer.vb">
+      <DependentUpon>Customer - Axle Hub %28Categ%29 v3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer - Axle Hub %28Categ%29 v3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer - Brake Drum %28Categ%29 v3.Designer.vb">
+      <DependentUpon>Customer - Brake Drum %28Categ%29 v3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer - Brake Drum %28Categ%29 v3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer - Brake Fluid %28Categ%29 v3.Designer.vb">
+      <DependentUpon>Customer - Brake Fluid %28Categ%29 v3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer - Brake Fluid %28Categ%29 v3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer - 2 Main Menu.Designer.vb">
+      <DependentUpon>Customer - 2 Main Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer - 2 Main Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Z Draft - Axle Hub %28Categ%29 C.Designer.vb">
+      <DependentUpon>Z Draft - Axle Hub %28Categ%29 C.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Z Draft - Axle Hub %28Categ%29 C.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Z Draft - Brake Drum %28Categ%29 C.Designer.vb">
+      <DependentUpon>Z Draft - Brake Drum %28Categ%29 C.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Z Draft - Brake Drum %28Categ%29 C.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Z Draft - Brake Fluid %28Categ%29 C.Designer.vb">
+      <DependentUpon>Z Draft - Brake Fluid %28Categ%29 C.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Z Draft - Brake Fluid %28Categ%29 C.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1. Main Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1. Main Menu.Designer.vb">
+      <DependentUpon>1. Main Menu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sample - %28Category%29 C.Designer.vb">
+      <DependentUpon>Sample - %28Category%29 C.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sample - %28Category%29 C.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin - 1 Hefflox Home.Designer.vb">
+      <DependentUpon>Admin - 1 Hefflox Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin - 1 Hefflox Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer - 1 Hefflox Home.Designer.vb">
+      <DependentUpon>Customer - 1 Hefflox Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer - 1 Hefflox Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Customer - Hefflox Shopping Cart.Designer.vb">
+      <DependentUpon>Customer - Hefflox Shopping Cart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer - Hefflox Shopping Cart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin - Axle Hub %28Categ%29 v2.resx">
+      <DependentUpon>Admin - Axle Hub %28Categ%29 v2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin - Brake Drum %28Categ%29 v2.resx">
+      <DependentUpon>Admin - Brake Drum %28Categ%29 v2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin - Brake Fluid %28Categ%29 v2.resx">
+      <DependentUpon>Admin - Brake Fluid %28Categ%29 v2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin - Supplier %28Categ%29.resx">
+      <DependentUpon>Admin - Supplier %28Categ%29.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer - 3 Help Menu.resx">
+      <DependentUpon>Customer - 3 Help Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer - Axle Hub %28Categ%29 v3.resx">
+      <DependentUpon>Customer - Axle Hub %28Categ%29 v3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer - Brake Drum %28Categ%29 v3.resx">
+      <DependentUpon>Customer - Brake Drum %28Categ%29 v3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer - Brake Fluid %28Categ%29 v3.resx">
+      <DependentUpon>Customer - Brake Fluid %28Categ%29 v3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer - 2 Main Menu.resx">
+      <DependentUpon>Customer - 2 Main Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Z Draft - Axle Hub %28Categ%29 C.resx">
+      <DependentUpon>Z Draft - Axle Hub %28Categ%29 C.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Z Draft - Brake Drum %28Categ%29 C.resx">
+      <DependentUpon>Z Draft - Brake Drum %28Categ%29 C.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Z Draft - Brake Fluid %28Categ%29 C.resx">
+      <DependentUpon>Z Draft - Brake Fluid %28Categ%29 C.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1. Main Menu.resx">
+      <DependentUpon>1. Main Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sample - %28Category%29 C.resx">
+      <DependentUpon>Sample - %28Category%29 C.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin - 1 Hefflox Home.resx">
+      <DependentUpon>Admin - 1 Hefflox Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer - 1 Hefflox Home.resx">
+      <DependentUpon>Customer - 1 Hefflox Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer - Hefflox Shopping Cart.resx">
+      <DependentUpon>Customer - Hefflox Shopping Cart.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
